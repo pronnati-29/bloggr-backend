@@ -21,8 +21,8 @@ if (!fs.existsSync(uploadsDir)) {
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
-    credentials: true
+  origin: true,
+  credentials: true
 }));
 
 // Static files
